@@ -1,0 +1,46 @@
+MANUAL INSTALAÇÃO
+ VirtualEnv / Rodar SERVIDOR LOCAL / Criar LOGIN e SENHA Django 2.0
+
+# Abra o CMD windows/afins
+# Para instalar a VirtualEnv
+c:\Users\TibaC\Documents>pip install virtualenv
+
+# Criando a virtualenv
+c:\Users\TibaC\Documents>virtualenv venv
+
+# Entrar na venv
+c:\Users\Name\Documents>cd venv
+
+c:\Users\Name\Documents\venv>
+
+c:\Users\Name\Documents\venv>Scripts\activate		
+
+# Agora o virtualenv está ativado. Digitar na sequencia:
+(venv) c:\Users\Name\Documents\venv>pip install Django==2.0
+
+# Verificar se o Django foi instalado com sucesso digite:
+(venv) c:\Users\Name\Documents\venv>pip freeze	
+
+# Deverá aparecer:
+Django==2.0 (versao do Django)
+pytz==2018.5 (biblioteca do Python)
+
+# Criar login e senha do Django 2.0:
+(venv) C:\Users\Name\esmalteria> python manage.py createsuperuser
+
+Username: ola
+Email address: ola@exemplo.com
+Password:
+Password (again):
+Superuser created successfully.
+
+#Rodar Servidor Django
+(venv) c:\Users\Name\Documents\esmalteria>python manage.py runserver
+
+#Logar no Django:
+Digite:  http://127.0.0.1:8000/admin/
+
+Obs: Se quiser mais detalhes na documentação sobre Django admin >>> https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+
+
+
