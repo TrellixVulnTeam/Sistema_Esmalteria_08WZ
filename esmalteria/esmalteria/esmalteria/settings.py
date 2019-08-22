@@ -57,7 +57,7 @@ ROOT_URLCONF = 'esmalteria.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\tibac\Documents\esmalteria\esmalteria\esmalteria\templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'esmalteria/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
